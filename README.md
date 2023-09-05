@@ -17,7 +17,7 @@ go run 001.go
 ### JavaScript
 
 ```console
-node 001.jl
+node 001.js
 ```
 
 ### Ruby
