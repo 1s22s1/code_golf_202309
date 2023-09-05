@@ -6,6 +6,14 @@
 go run 001.go
 ```
 
+### Julia
+
+We use Julia with 1.9.3
+
+```console
+julia 001.jl
+```
+
 ### Ruby
 
 ```console

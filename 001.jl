@@ -1,0 +1,3 @@
+strs = readlines()
+
+@show strs
