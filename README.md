@@ -1,17 +1,23 @@
 # code_golf_202309
-## How to Run
-### Go
-
-```console
-go run 001.go
-```
-
+## How to
 ### Julia
 
 We use Julia with 1.9.3
 
 ```console
 julia 001.jl
+```
+
+### Go
+
+```console
+go run 001.go
+```
+
+### JavaScript
+
+```console
+node 001.jl
 ```
 
 ### Ruby
