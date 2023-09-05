@@ -1,3 +1,5 @@
 strs = readlines()
 
-@show strs
+for str in strs
+    println(replace(str, " " => ""))
+end
