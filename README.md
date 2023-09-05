@@ -1,7 +1,8 @@
 # code_golf_202309
-## Run test
-### Ruby
+## Count byte
+
+This is example for counting bytes.
 
 ```console
-bundle exec rspec answer_spec.rb
+wc --bytes 001.rb
 ```
