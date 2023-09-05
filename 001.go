@@ -9,8 +9,13 @@ import (
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
+	var strs []string
 
 	for scanner.Scan() {
-		fmt.Println(strings.ReplaceAll(scanner.Text(), " ", ""))
+		strs = append(strs, strings.ReplaceAll(scanner.Text(), " ", ""))
+	}
+
+	for _, str := range strs {
+		fmt.Println(str)
 	}
 }
