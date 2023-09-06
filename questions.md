@@ -44,9 +44,9 @@ sakura
 ### Sample output:
 
 ```console
-s => 1
 a => 2
 k => 1
-u => 1
 r => 1
+s => 1
+u => 1
 ```

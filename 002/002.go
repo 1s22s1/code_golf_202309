@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	var str string
@@ -12,8 +15,14 @@ func main() {
 		asciiCount[string(c)] += 1
 	}
 
-	// TODO: 並び順を固定にしたい
-	for key, value := range asciiCount {
-		fmt.Println(key, value)
+	var ks []string
+	for k := range asciiCount {
+		ks = append(ks, k)
+	}
+
+	sort.Strings(ks)
+
+	for _, k := range ks {
+		fmt.Println(k, " => ", asciiCount[k])
 	}
 }
