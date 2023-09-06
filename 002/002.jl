@@ -9,6 +9,8 @@ for str in strs
     end
 end
 
+dict = sort(collect(dict))
+
 for (key, value) in dict
     println("$(key) => $(value)")
 end
