@@ -12,6 +12,7 @@ func main() {
 		asciiCount[string(c)] += 1
 	}
 
+	// TODO: 並び順を固定にしたい
 	for key, value := range asciiCount {
 		fmt.Println(key, value)
 	}
