@@ -4,10 +4,15 @@ import "fmt"
 
 func main() {
 	var str string
+	asciiCount := map[string]int{}
 
 	fmt.Scan(&str)
 
 	for _, c := range str {
-		fmt.Println(c)
+		asciiCount[string(c)] += 1
+	}
+
+	for key, value := range asciiCount {
+		fmt.Println(key, value)
 	}
 }
