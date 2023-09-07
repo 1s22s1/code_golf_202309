@@ -11,4 +11,7 @@ for (const index in input) {
     }
 }
 
-console.log(asciiCount)
+asciiCount.sort((s, t) => (s.char < t.char ? -1 : 1))
+asciiCount.forEach((elem, _) => {
+    console.log(`${elem.char} => ${elem.count}`)
+})
