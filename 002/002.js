@@ -1,11 +1,13 @@
-let asciiCount = {};
+let asciiCount = [];
 const input = require("fs").readFileSync("/dev/stdin", "utf8").trim().split('');
 
 for (const index in input) {
-    if (input[index] in asciiCount) {
-        asciiCount[input[index]]++;
+    const target = asciiCount.find((ascii) => ascii.char === input[index])
+
+    if (target) {
+        target.count = target.count + 1
     } else {
-        asciiCount[input[index]] = 1;
+        asciiCount.push({char: input[index], count: 1})
     }
 }
 
